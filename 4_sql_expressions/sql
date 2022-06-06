@@ -1,0 +1,5 @@
+1. SELECT id FROM account WHERE client_id=<номер клиента> AND closed IS NULL;
+// count()автоматически подсчитывает только значения, отличные от NULL (если вы указываете конкретный столбец)
+2. SELECT client_id FROM account GROUP BY client_id HAVING count(closed)=count(created);
+// Если сумма балансов по открытым счетам клиента на сегодняшний день не меньше, чем среднее значение баланса по открытым счетам всех клиентов на сегодняшний день, то клиент является "ценным"
+3. SELECT client_id FROM account WHERE closed IS NULL GROUP BY client_id HAVING sum(amount) >= (SELECT avg(amount) FROM account WHERE closed IS NULL);
