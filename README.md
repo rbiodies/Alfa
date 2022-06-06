@@ -1,5 +1,5 @@
 # Alfa
-### [Task number 4.]()
+### [Task number 4.](https://github.com/rbiodies/Alfa/tree/main/4_sql_expressions)
 The banking system contains the main account table, which stores the accounts of all bank customers:
 
 CREATE TABLE account (
@@ -22,7 +22,7 @@ It is necessary to write SQL expressions for queries that return:
 - list of open client accounts client_id=<client number\> today
 - list of clients who have closed all their accounts
 - list of the most "valuable" clients for the bank, explaining how you define the "value" of a client
-### [Task number 5.]()
+### [Task number 5.](https://github.com/rbiodies/Alfa/tree/main/5_queue)
 Given two ordered queues that may contain the same elements. Combine (Java) these queues into one ordered queue, eliminating duplicate elements.
-### [Task number 6.]()
+### [Task number 6.](https://github.com/rbiodies/Alfa/tree/main/6_symmetric_difference)
 Implement (Java) symmetric difference of two collections using Collection methods (addAll(), removeAll(), retainAll()).
